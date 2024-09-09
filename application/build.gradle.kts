@@ -9,5 +9,5 @@ dependencies {
 }
 
 application {
-    mainClass = "org.gradle.sample.Main"
+    mainClass.set("org.gradle.sample.Main")
 }

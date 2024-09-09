@@ -14,10 +14,10 @@ dependencies {
 reporting {
     reports {
         val testCodeCoverageReport by creating(JacocoCoverageReport::class) { // <.>
-            testType = TestSuiteType.UNIT_TEST
-//            reportTask {
-//                executionData.setFrom(project.fileTree("dir" to rootDir, "include" to "**/build/jacoco/*.exec"))
-//            }
+            testType.set(TestSuiteType.UNIT_TEST)
+            reportTask {
+                executionData.setFrom(project.fileTree("dir" to rootDir, "include" to "**/build/jacoco/*.exec")) // <.>
+            }
         }
     }
 }
