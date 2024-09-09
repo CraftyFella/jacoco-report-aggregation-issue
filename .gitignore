@@ -1,0 +1,8 @@
+**/.gradle/**
+.idea/
+**/.DS_Store
+build/tmp/**
+**/build/**
+**/src/generated/**
+/core/target/**
+snyk
